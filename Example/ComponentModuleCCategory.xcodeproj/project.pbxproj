@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ComponentModuleCCategory_Example/Pods-ComponentModuleCCategory_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ComponentMiddleware/ComponentMiddleware.framework",
 				"${BUILT_PRODUCTS_DIR}/ComponentModuleCCategory/ComponentModuleCCategory.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ComponentMiddleware.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ComponentModuleCCategory.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
