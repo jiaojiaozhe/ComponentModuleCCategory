@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ComponentModuleCCategory'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'ComponentModuleC对外接口组件.'
 
 # This description is used to generate tags and improve search results.
@@ -40,5 +40,5 @@ ComponentModuleC对外接口组件
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  s.dependency 'ComponentMiddleware'
+  s.dependency 'ComponentMiddleware', '< 1.0.0'
 end
