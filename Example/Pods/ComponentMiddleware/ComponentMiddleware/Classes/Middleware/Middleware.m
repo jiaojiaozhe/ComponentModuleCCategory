@@ -59,7 +59,7 @@ NSString* const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParamsK
     if(moduleName.length > 0){
         targetClassString = [NSString stringWithFormat:@"%@.Target_%@",moduleName,targetName];
     }else{
-        targetClassString = [NSString stringWithFormat:@"Target.%@",targetName];
+        targetClassString = [NSString stringWithFormat:@"Target_%@",targetName];
     }
     
     NSObject *target = self.cachedTarget[targetClassString];
@@ -68,7 +68,7 @@ NSString* const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParamsK
         target = [[targetClass alloc] init];
     }
     
-    NSString *actionString = [NSString stringWithFormat:@"Action_%@",actionName];
+    NSString *actionString = [NSString stringWithFormat:@"Action_%@:",actionName];
     SEL action = NSSelectorFromString(actionString);
     
     if(target == nil){
